@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Thoughts</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#questions">Questions</a></li>
+                <li class="about"><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        
+        <div class="main" id="main">
+            <div class="writeT">
+                <input id="title" type="text" class="title" placeholder="Title">
+                <textarea id="article_body" class="thoughts" placeholder="What's in your mind?"></textarea>
+                <button class="share" type="button" onclick="addPost()">Share</button>
+            </div>
+            
+            
+        </div>
+        
+        <aside class="left">     
+            <section class="top-friends"> 
+                <h3>Top Freinds</h3>
+                <ul>
+                    <li id="one" onclick="getElement(this)">
+                        <img src="pics/1.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Mohammed</p>
+                        <p>211 Likes</p>
+                    </li>
+                    <li id="two" onclick="getElement(this)">
+                        <img src="pics/2.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Ahmed</p>
+                        <p>2711 Likes</p>
+                    </li>
+                    <li id="three" onclick="getElement(this)">
+                        <img src="pics/3.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">ERORR 404</p>
+                        <p>711 Likes</p>
+                    </li>
+                    <li id="four" onclick="getElement(this)">
+                        <img src="pics/4.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Mahmoud</p>
+                        <p>271 Likes</p>
+                    </li>
+                    <li id="five" onclick="getElement(this)">
+                        <img src="pics/5.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Yassin</p>
+                        <p>2711 Likes</p>
+                    </li>
+                    <li id="six" onclick="getElement(this)">
+                        <img src="pics/6.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Ibrahim</p>
+                        <p>645 Likes</p>
+                    </li>
+                </ul>   
+            </section>   
+            <section class="sug-friends">
+                <h3>Suggested Friends</h3>
+                <ul>
+                    <li id="seven" onclick="getElement(this)">
+                        <img src="pics/7.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Said</p>
+                        <p>151 Likes</p>
+                    </li>
+                    <li id="eight" onclick="getElement(this)">
+                        <img src="pics/8.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Ismail</p>
+                        <p>511 Likes</p>
+                    </li>
+                    <li id="nine" onclick="getElement(this)">
+                        <img src="pics/9.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Pop Marley</p>
+                        <p>241 Likes</p>
+                    </li>
+                    <li id="ten" onclick="getElement(this)">
+                        <img src="pics/10.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Sansa Stark</p>
+                        <p>2711 Likes</p>
+                    </li>
+                    <li id="eleven" onclick="getElement(this)">
+                        <img src="pics/11.png">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">ERORR 404</p>
+                        <p>2551 Likes</p>
+                    </li>
+                </ul> 
+            </section>
+        </aside>
+        
+        <aside class="right">
+            <section class="leaderboard">
+                <h3>Leaderboard</h3>
+                <ul>
+                    <li id="twelv" onclick="getElement(this)">
+                        <img src="pics/12.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">ADN Wakim</p>
+                        <p>555 Likes</p>
+                    </li>
+                    <li id="thirteen" onclick="getElement(this)">
+                        <img src="pics/13.png">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Kim Wixler</p>
+                        <p>210 Likes</p>
+                    </li>
+                    <li id="fourteen" onclick="getElement(this)">
+                        <img src="pics/14.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Walter White</p>
+                        <p>100 Likes</p>
+                    </li>
+                    <li id="fifteen" onclick="getElement(this)">
+                        <img src="pics/15.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Billie Eilish</p>
+                        <p>500 Likes</p>
+                    </li>
+                    <li id="sixteen" onclick="getElement(this)">
+                        <img src="pics/16.jpg">
+                        <i class="fas fa-heart"></i>
+                        <p class="name">Faouzia</p>
+                        <p>414 Likes</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="favorites">
+                <h3>Favourites</h3>
+                <ul id="favo">
+                </ul>
+            </section>
+        </aside>
+        
+        
+        
+        <div class="clearfix"></div> 
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

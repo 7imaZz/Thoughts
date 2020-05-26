@@ -1,0 +1,188 @@
+*{
+    margin: 0px; 
+	padding: 0px; 
+	-wibkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+}
+
+.main{
+    background-color: #FFF;
+    width: 57%;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    margin-top: 220px;
+}
+
+.thoughts{
+    display: block;
+    height: 120px;
+    width: 90%;
+    border: 2px solid #1d2233;
+    border-radius: 4px;    
+    padding: 12px 20px;
+    margin: 10px auto;
+    box-sizing: border-box;
+    font-size: 22px;
+    resize: none;
+    
+}
+
+.title{
+    display: block;
+    height: 50px;
+    width: 90%;
+    border: 2px solid #1d2233;
+    border-radius: 4px;  
+    padding: 12px 20px;
+    margin: 10px auto;
+    font-size: 18px;
+    resize: none;
+}
+
+.share{
+    padding: 15px;
+    position: relative;
+    background-color: #1d2233; 
+    left: 86%;
+    color: #FFF;
+    border-radius: 8px;
+}
+
+.posts{
+    width: 90%;
+    margin: 10px auto;
+    background: #FEF;
+}
+
+
+.posts article{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px;
+    
+}
+
+.article-title{
+    
+    height: 40px;
+    width: 100%;
+    background-color: #BBB;
+    border-top-left-radius: 4px;  
+    border-top-right-radius: 4px;   
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+nav{
+    padding: 0;
+    margin: 0;
+    height: 65px;
+    width: 100%;
+    background-color: #1d2233;
+    position: fixed;
+    z-index: 1000;
+}
+
+ul{
+    list-style: none;
+    overflow: hidden;
+
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a{
+    padding: 23px 24px; 
+    color: #FFF;
+    text-decoration: none;
+    float: left;
+}
+
+nav ul li:last-child{
+    float: right;
+}
+
+aside{
+    width: 20%;
+    padding-top: 70px;
+    display: inline-block;
+    background-color: #DDD;
+    margin: 5px;
+}
+
+.right{
+    float: right;
+}
+
+aside section h3{
+	background: #1d2233;
+	padding: 10px;
+    color: #FFF;
+}
+
+aside section ul li{
+    height: 70px;
+    padding: 10px;
+    border-bottom: 1px solid #CCC;
+}
+
+aside section ul img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+aside section ul i{
+    position: relative;
+    display: inline-block;
+    float: right;
+    top: 15px;
+}
+
+aside section ul .name{
+    position: relative;
+    display: inline-block;
+    top: -30px;
+    left: 6px;
+    color: #1c1c25;
+    font-family: cursive;
+    font-size: medium;
+}
+
+aside section ul p{
+    position: relative;
+    top: -30px;
+    left: 60px;
+    color: #AAA;
+    font-family: cursive;
+    font-size: small;
+}
+
+
+aside section ul li:last-child{
+    border-bottom: none;
+}
+
+
+nav ul li a:hover{
+    background-color: forestgreen;
+}
+
+aside section ul li:hover, .share:hover{
+    background-color: forestgreen;
+    
+}
+
+aside section ul li:hover p{
+    color: #FFF;    
+}
